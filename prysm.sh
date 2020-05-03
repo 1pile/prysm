@@ -115,7 +115,6 @@ function get_prysm_version() {
 function verify() {
     file=$1
 
-    skip=${PRYSM_ALLOW_UNVERIFIED_BINARIES-0}
     if [[ $skip == 1 ]]; then
         return 0
     fi
